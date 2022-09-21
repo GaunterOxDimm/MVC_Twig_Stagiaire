@@ -1,0 +1,10 @@
+<div>
+    {% for offer in alloffers %}
+<div>
+<input type="submit" value="Delete" />
+    {{offer.get_title}} :
+    {{offer.get_description}}
+    <input value="{{offer.get_id}}" name="id" type="hidden">
+</div>
+    {% endfor %}
+</div>
